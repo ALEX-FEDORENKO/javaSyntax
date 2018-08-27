@@ -1,0 +1,44 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Box {
+	double width;
+	double height; 
+	double depth;
+	
+	//расчитать и возратить обьем 
+	double volume()
+	{
+		return width * height * depth;
+	}
+}
+
+class BoxDemo4 {
+	public static void main(String args[]) {
+		Box newBox1 = new Box();
+		Box newBox2 = new Box();
+		double vol;
+		
+		//привоить значение перееменной комплекта newBox1
+		newBox1.width = 10;
+		newBox1.height = 20;
+		newBox1.depth = 15;
+		
+		//присвоить значение переменной комплекта newBox2
+		newBox2.width = 3;https://ideone.com/5xr552#
+		newBox2.height = 6;
+		newBox2.depth = 9;
+		
+		//расчитать значение для первого комплекта 
+		vol = newBox1.volume();
+		System.out.println(vol);
+		
+		//расчитать значение для первого комплекта 
+		vol = newBox2.volume();
+		System.out.println(vol);
+	}
+}
