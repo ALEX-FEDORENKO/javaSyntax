@@ -1,7 +1,7 @@
 //программа в которой исползуется класс Vechile 
 
 //В этом классе обьявлется обьекта с типом Vechile 
-class Vechile {
+class Vichile {
     int passenger;  //количество пассажиров
     int fuelcap; //емкость топливного бака
     int mpg; //потребление топлива в милях на галон 
@@ -9,16 +9,26 @@ class Vechile {
 
 class VechileDemo {
    public static void main(String[] args){
-       Vechile minivan = new Vechile();
+       Vechile minivan1 = new Vechile();
+       Vechile minivan2 - new Vechile();
        int range;
        
-       //присвоить значение полям в обьекте minivan
-       minivan.passenger = 7;
-       minivan.fuelcap = 16;
-       minivan.mpg = 24;
+       //присвоить значение полям в обьекте1 minivan
+       minivan1.passenger = 7;
+       minivan1.fuelcap = 16;
+       minivan1.mpg = 24;
        
-       //расчитать дальность поездки при полном баке
-       range = minivan.fuelcap * minivan.mpg;
-       System.out.println("Мини фургон может перевезти " + minivan.passenger + " пассажиров на расстояние " + range + " миль ");
+        //присвоить значение полям в обьекте2 minivan
+       minivan2.passenger = 14;
+       minivan2.fuelcap = 32;
+       minivan2.mpg = 48;
+       
+       //расчитать дальность поездки при полном баке (обект 1)
+       range = minivan1.fuelcap * minivan1.mpg;
+       System.out.println('Мини фургон может перевезти ' + minivan1.passenger + ' пассажиров на расстояние ' + range + ' миль ');
+       
+       //расчитать дальность поездки при полном баке (обект 1)
+       range = minivan2.fuelcap * minivan2.mpg;
+       System.out.println('Мини фургон может перевезти ' + minivan2.passenger + ' пассажиров на расстояние ' + range + ' миль ');
    }
 }
