@@ -1,34 +1,40 @@
-//программа в которой исползуется класс Vechile 
+//Пограмма в которой исползуется класс Vechile 
 
 //В этом классе обьявлется обьекта с типом Vechile 
-class Vichile {
+class Vachile {
     int passenger;  //количество пассажиров
     int fuelcap; //емкость топливного бака
     int mpg; //потребление топлива в милях на галон 
+
+	//Отобразить дальность поездки транпортного средства
+	void range() {
+		System.out.println("Дальность - " + fuelcap * mpg + " миль");
+	}
 }
 
-class VechileDemo {
-   public static void main(String[] args){
-       Vechile minivan1 = new Vechile();
-       Vechile minivan2 - new Vechile();
-       int range;
-       
-       //присвоить значение полям в обьекте1 minivan
-       minivan1.passenger = 7;
-       minivan1.fuelcap = 16;
-       minivan1.mpg = 24;
-       
-        //присвоить значение полям в обьекте2 minivan
-       minivan2.passenger = 14;
-       minivan2.fuelcap = 32;
-       minivan2.mpg = 48;
-       
-       //расчитать дальность поездки при полном баке (обект 1)
-       range = minivan1.fuelcap * minivan1.mpg;
-       System.out.println('Мини фургон может перевезти ' + minivan1.passenger + ' пассажиров на расстояние ' + range + ' миль ');
-       
-       //расчитать дальность поездки при полном баке (обект 1)
-       range = minivan2.fuelcap * minivan2.mpg;
-       System.out.println('Мини фургон может перевезти ' + minivan2.passenger + ' пассажиров на расстояние ' + range + ' миль ');
-   }
+class addMethod {
+	public static void main(String[] args) {
+		Vachile minivan1 = new Vachile();
+		Vachile minivan2 = new Vachile();
+		
+		int range1, range2;
+		
+		
+		//Присвоить значения полям обьекту minivan1
+		minivan1.passenger = 7;
+		minivan1.fuelcap = 14;
+		minivan1.mpg = 28;
+		
+		//Присвоить значения полям обьекту minivan2 
+		minivan2.passenger = 14;
+		minivan2.fuelcap = 28;
+		minivan2.mpg = 56;
+		
+		
+		System.out.println("Мини-фypгoн может перевезти " + minivan1.passenger + " пассажиров ");
+		minivan1.range(); // отобразить дальность поездки мини-фургона 
+		
+		System.out.println("Мини-фypгoн может перевезти " + minivan2.passenger + " пассажиров ");
+		minivan2.range(); // отобразить дальность поездки мини-фургона 
+	}
 }
